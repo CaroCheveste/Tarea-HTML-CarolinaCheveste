@@ -2,50 +2,45 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: 8px;
     font-family:monospace;
     color:rgb(255, 255, 255)   
 }
-
 .header {
     display: grid;
     background-color: rgb(59, 142, 220);
-    grid-template-columns: auto;
     padding: 25px; 
-    
-}
-    
+    }
 .contenido {
     display: grid;
     grid-template-areas: ". content sidebar ."
                          ". twin twin1 .";
+   
     justify-content: center;
-    padding:  5px 25px 5px;
+    padding:  5px 20px 5px;
     gap: 5px;
     text-align: center;     
 }  
-
 .content {
     background-color:rgb(89, 196, 89) ;
     grid-area: content;
-    padding: 25px;  
+    padding: 20px;  
 }
 .sidebar {
     background-color:rgb(178, 89, 196) ;
     grid-area: sidebar;
-    padding: 25px;
+    padding: 20px;
 }
 .twin {
     background-color:rgb(187, 137, 9) ;
     grid-area: twin;
-    padding: 25px;
+    padding: 20px;
 }
 .twin1 {
     background-color:rgb(187, 137, 9) ;
     grid-area: twin1;
-    padding: 25px;
+    padding: 20px;
 }
-
 .footer {
     display: grid;
     background-color: rgb(9, 74, 135);
