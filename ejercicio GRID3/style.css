@@ -1,0 +1,43 @@
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pagina {
+    display:grid;
+    width: 100%;
+    height: 500px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornsilk;
+    grid-template-areas: "cabezal cabezal cabezal"
+                         "nav content1 content2"
+                         "nav footer footer";
+    grid-template-columns: 70px;    
+    grid-template-rows: 100px 1fr 70px;    
+
+}
+
+.cabezal {
+    grid-area: cabezal;
+    background-color: rgb(180, 12, 104);
+    
+
+}
+.nav {
+    grid-area: nav;
+    background-color: rgb(49, 4, 71);  
+      
+}
+.content1 {
+    grid-area: content1;
+    background-color: rgb(104, 10, 107);
+}
+.content2 {
+    grid-area: content2;
+    background-color: rgb(47, 5, 58);    
+}
+.footer {
+    grid-area: footer;
+    background-color: blue;    
+}
